@@ -36,7 +36,7 @@ jobs:
 
     - name: Deploy to GitHub Pages
       run: |
-        mkdir gh-pages
+        mkdir -p gh-pages
         mv dist/* gh-pages/
         rm -rf *
         mv gh-pages/* .
